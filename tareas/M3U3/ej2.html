@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ej2</title>
+</head>
+<body>
+    <script>
+        const tamano = prompt('indique el tamaño de su array', '');
+        let arreglo=[];
+        let mayor = -9999999;
+        for(i=0;i<tamano;i++){
+            arreglo[i]=prompt(`Ingrese el valor ${i+1}:`,'');
+            if(parseInt(arreglo[i])>mayor){
+                mayor=arreglo[i];
+            }
+        }
+        console.log(`El mayor valor del arreglo es ${mayor}`)
+        
+    </script>
+    
+</body>
+</html>

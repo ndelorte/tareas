@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 1</title>
+    <link rel="stylesheet" href="ejercicio1.css">
+</head>
+
+<body>
+    <div class="contenedor">
+        <div class="caja1"></div>
+        <div class="caja2"></div>
+        <div class="caja3"></div>
+    </div>
+    <script>
+        const doc=document.body;
+        const rojo=document.getElementsByClassName('caja1')[0];
+        const verde=document.getElementsByClassName('caja2')[0];
+        const azul=document.getElementsByClassName('caja3')[0];
+        rojo.addEventListener('click', function(){
+            doc.classList.remove('caja2','caja3');
+            doc.classList.add('caja1');
+        });
+        verde.addEventListener('click', function(){
+            doc.classList.remove('caja1','caja3');
+            doc.classList.add('caja2');
+        });
+        azul.addEventListener('click', function(){
+            doc.classList.remove('caja2','caja1');
+            doc.classList.add('caja3');
+        });
+    </script>
+</body>
+
+</html>

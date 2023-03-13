@@ -1,0 +1,34 @@
+h1{
+    color: blue;/*comentario en css*/
+    text-transform: uppercase; /*todo en mayuscula*/
+    background-color: lightblue;/*fondo de color*/
+    text-align: center;/*centrado*/
+}
+
+h2{
+    color: lightblue;
+    font-style: italic; /*cursiva*/
+}
+
+p{
+    font-family: Arial;/*fuente arial*/
+    font-size: 14px;/*tamaño letra. defecto es 16px*/
+    line-height: 20px;/*alto del renglon*/
+}
+
+.primerp{
+    color: blueviolet;
+    font-weight: bold; /*negrita*/
+}
+.importante{
+    font-weight: bold;
+    font-size: 25px;
+}
+#caja{
+    width: 200px;/*ancho*/
+    height: 200px;
+    background-color: lightblue;
+    border: 5px solid black;
+    padding: 10px; /*distancia al borde de la caja*/
+    margin-left: 150px;/*distancia de la caja a los bordes*/
+}

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculum Vitae</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Prosto+One&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="estiloscv.css">
+</head>
+
+<body>
+
+    <!-- Esto es un comentario de prueba con ctrl k c-->
+    <h1>Curriculum vitae</h1>
+    <h2>Nicolas Delorte</h2>
+    <img id="fotoperfil" src="fotocv.jpg" alt="Mi imagen">
+    <!-- <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis culpa fuga dolores atque quae exercitationem quisquam dolore non 
+        magnam asperiores, aspernatur rerum distinctio iure quo repellendus. Ipsum quasi itaque incidunt.</p> -->
+    <div id="datos">
+        <h3>Edad: 24</h3>
+        <h3>Domicilio: Quilmes</h3>
+    </div>
+    <div class="laboral">
+        <h4>Experiencia laboral</h4>
+        <ul>
+            <li>Entrenador de tenis en el Club Quilmes</li>
+            <li>Entrenador de tenis en El Prado</li>
+            <li>Distribucion mercaderia Bagues</li>
+            <li>Diseño de redes en radio FM VOX</li>
+        </ul>
+    </div>
+    <div class="estudios">
+        <h4>Estudios</h4>
+        <ul>
+            <li>Escuela secundaria San Mauro - completo <span class="fecha">2010-2015</span> </li>
+            <li>Psicologia UBA - incompleto <span class="fecha">2016-2019</span> </li>
+            <li>Curso microsoft avanzado - completo <span class="fecha">2015</span></li>
+            <li>Ingenieria en sistemas - en curso <span class="fecha">2020-actualidad</span> </li>
+        </ul>
+    </div>
+    <div class="perfil">
+        <h4>Perfil</h4>
+        <p>Mi nombre es Nicolas Delorte soy estudiante en ingenieria en sistemas y entrenador nacional de tenis.
+            Actualmente trabajo de entrenador en un club en Quilmes media jornada.</p>
+        <p>Mis intereses a futuro son poder trabajar en el area que estudio (sistemas) para poder ir sumando experiencia
+            y poder desarrollarme.</p>
+        <p>En el ambito laboral me considero una persona exigente que intenta hacer siempre las cosas de la mejor
+            manera, siempre aprendiendo e informandome sobre lo que ejerzo. </p>
+    </div>
+
+
+    <h4 id="tituloform">Si queres contactarme podes hacerlo a través de este formulario</h4>
+    <form action="">
+        <p>
+            <label for="nom"><i class="fa-solid fa-user"></i> Nombre</label>
+            <input type="text" name="nombre" placeholder="Nombre">
+        </p>
+        <p>
+            <label for="ape"><i class="fa-solid fa-user"></i> Apellido</label>
+            <input type="text" name="apellido" placeholder="Apellido">
+        </p>
+        <p>
+            <label for="emp"><i class="fa-solid fa-briefcase"></i> Empresa</label>
+            <input type="text" name="empresa" placeholder="Nombre empresa">
+        </p>
+        <p>
+            <label for="tipotra">Tipo trabajo</label>
+        <ul>
+            <li class="liform">
+                <input class="inptra" type="radio" name="tipotra" value="part">
+                <label>Part Time</label>
+            </li>
+            <li class="liform">
+                <input class="inptra" type="radio" name="tipotrabajo" value="full">
+                <label>Full Time</label>
+            </li>
+        </ul>
+        </p>
+        <p>
+            <label for="mail"><i class="fa-solid fa-envelope"></i> Email de contacto</label>
+            <input type="email" name="mail" placeholder="nombre@ejemplo.com">
+        </p>
+        <p>
+            <label for="coment"><i class="fa-solid fa-comment"></i> Comentarios</label>
+        <div><input id="cajacoment" type="text" name="comentarios"></div>
+
+        </p>
+        <p>
+            <input id="enviar" type="submit" value="Enviar">
+        </p>
+    </form>
+
+</body>
+
+</html>
