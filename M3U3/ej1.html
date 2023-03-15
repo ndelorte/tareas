@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ej1</title>
+</head>
+<body>
+    <script>
+        const distancia = prompt('Ingrese la distancia de su destino:', '');
+
+        if(distancia<0){
+            alert('LA DISTANCIA DEBE SER MAYOR A CERO')
+        }else if(distancia<1000){
+            console.log('Transporte apropiado: pie')
+        }else if(distancia<10000){
+            console.log('Transporte apropiado: bicicleta')
+        }else if(distancia<30000){
+            console.log('Transporte apropiado: colectivo')
+        }else if(distancia<100000){
+            console.log('Transporte apropiado: auto')
+        }else(
+            console.log('Transporte apropiado: avion')
+        )
+
+    </script>
+</body>
+</html>
