@@ -36,12 +36,13 @@ app.get('/',function(req, res){
   res.render('index',{
     title: 'sesiones en Express.js',
     conocido: conocido,
-    nombre: req.session.nombre
+    nombre: req.session.nombre,
+    edad: req.session.edad
   })
 });
 
 app.post('/ingresar', function (req, res){
-  if (req.body.nombre){
+  if (req.body.nombre && req.body.edad>17){
     req.session.nombre = req.body.nombre
   }
   res.redirect('/');
